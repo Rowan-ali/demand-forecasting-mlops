@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets / local configuration
+.env
+.env.*
+*.key
+*.pem
+
+# Runtime / generated artifacts
+logs/*.log
+predictions/*.json
+predictions/*.csv
+reports/*.json
+reports/*.csv
+alerts/*.json
+alerts/*.txt
+
+# Local MLflow artifacts
+mlruns/
+mlartifacts/
+
+# Keep folder placeholders
+!.gitkeep

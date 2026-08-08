@@ -1,0 +1,33 @@
+FINAL REPOSITORY NOTES
+
+1. Removed from the public repo:
+   - .idea/
+   - __pycache__/
+   - runtime logs
+   - generated predictions/reports/alerts
+   - deployment video (keep it for LinkedIn/Featured rather than GitHub)
+
+2. Kept:
+   - dataset
+   - serialized model
+   - feature_columns.txt
+   - notebook
+   - FastAPI service
+   - Streamlit dashboard
+   - test client
+
+3. Required code edit before running:
+   In src/mlops_deployment.py change:
+       MODEL_PATH = "gradient_boosting_demand_model.pkl"
+       FEATURES_PATH = "feature_columns.txt"
+   to:
+       MODEL_PATH = "models/gradient_boosting_demand_model.pkl"
+       FEATURES_PATH = "models/feature_columns.txt"
+
+4. Recommended later improvement:
+   Make the dashboard API URL configurable instead of hard-coded localhost.
+
+5. README deliberately distinguishes:
+   - Phase 3/4 model-comparison metrics (R2 test ~0.7208)
+   - final serialized Phase 5 model metrics (R2 0.7291)
+   so we do not mix two different evaluation setups.
