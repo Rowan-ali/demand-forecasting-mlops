@@ -1,0 +1,6 @@
+Price
+Discount
+Stock_Availability
+Marketing_Effect
+Seasonal_Effect
+Public_Holiday
